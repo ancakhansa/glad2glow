@@ -1,0 +1,408 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.head-section {
+  background-color: #ffffff;
+}
+
+/* Navbar */
+body {
+  margin: 0;
+  padding: 0;
+  font-style: "Poppins", sans-serif;
+  font-family: 'Montserrat';
+  text-align: center;
+
+
+}
+
+.navbar-expand-lg {
+  margin-top: 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+
+}
+
+.nav-link.active {
+  color: #000;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nav-link :hover {
+  color: #EBB3C0;
+  transition: all ease 0.3s;
+}
+
+/* Second navigation styles */
+.costume-navbar-icon {
+  list-style: none;
+}
+
+.costume-navbar-icon li {
+  margin-right: 10px;
+}
+
+.costume-navbar-icon li i {
+  font-size: 25px;
+}
+
+/* Hero Section */
+.hero-section {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: 80px;
+  margin-top: 20px;
+  max-width: 1200px;
+}
+
+.hero-section span {
+  color: #EBB3C0;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin-top: 50px;
+
+}
+
+/* Slider section */
+.slider {
+  background-color: #EBB3C0;
+  size: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About */
+.about {
+  font-size: 80px;
+  /* text-align: center; */
+  color: #EBB3C0;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 300;
+  color: #D891A2;
+}
+
+/* Testimoni */
+.testimoni {
+  text-align: center;
+  padding: 50px;
+}
+
+.testimoni h1 {
+  font-size: 70px;
+  font-weight: 600;
+  text-align: center;
+  color: #CDDBA6;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.testimoni-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.testimoni-item {
+  text-align: center;
+  background-color: #F0F4E5;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.testimoni-item p{
+  color: #000;
+}
+
+.testimoni-item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.testimoni-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* Blog */
+#blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.blog-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.blog-heading span {
+  color: #EBB3C0;
+}
+
+.blog-heading h3 {
+  color: #EBB3C0;
+  font-weight: 600;
+  font-size: 70px;
+  text-align: center;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+}
+
+.blog-box {
+  width: 350px;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  margin: 20px 20px;
+
+}
+
+.blog-img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-text {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-text span {
+  color: #D891A2;
+  font-size: 0.9rem;
+}
+
+.blog-text .blog-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #272727;
+}
+
+.blog-text p {
+  color: #9b9b9b;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 3; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0px;
+}
+
+.blog-text a {
+  color: #0f0f0f;
+}
+
+.blog-text a:hover {
+  color: #EBB3C0;
+  transition: all ease 0.3s;
+}
+
+
+@media(max-width:1250px) {
+
+  .blog-box {
+    width: 300px;
+  }
+}
+
+@media(max-width:1100px) {
+  .blog-box {
+    width: 70%;
+  }
+}
+
+@media(max-width:550px) {
+
+  .blog-box {
+    margin: 20px 10px;
+    width: 100%;
+  }
+
+  #blog {
+    padding: 20px;
+  }
+}
+
+/* Question */
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--bg-gray);
+  padding-bottom: 50px;
+  padding-top: 60px;
+}
+
+.question h1 {
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  color: #BDA4DA;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.question span {
+  color: #EBB3C0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center !important;
+}
+
+.accordion {
+  width: 1134px;
+  list-style: none;
+}
+
+.accordion li {
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  padding: 12px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+
+.accordion li label {
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #BDA4DA;
+  font-family: 'Montserrat';
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.accordion li label::after {
+  content: '+';
+  font-size: 23px;
+}
+
+.answer {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+  color: #BDA4DA;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.radio:checked~.answer {
+  height: 110px;
+  /* Adjust height based on your content */
+}
+
+.radio {
+  display: none;
+}
+
+.radio:checked~label::after {
+  content: '-';
+}
+
+/* Footer */
+footer {
+  padding: 73px 50px; /*Vertikal horizontal*/
+  background-color: #F8FCED;
+}
+
+.top-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-desc a, p {
+  color: #EBB3C0;
+  display: flex;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.bottom-footer {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.medsos-footer i{
+  font-size: 24px;
+  color: #EBB3C0;
+  margin-right: 10px;
+}
+
+.footer-desc :hover{
+  color: #BDA4DA;
+  font-size: 16px;
+  cursor: pointer;
+}
+
